@@ -2,11 +2,11 @@
 
 Availablity images: 
 
-* biolinh/prestashop-base:ps-release * 
-* biolinh/prestashop-base:ps-5.6-fpm-apache  *
-* biolinh/prestashop-base:5.6-fpm-apache * 
-* biolinh/prestashop-base:ps1.7-dev * 
-* biolinh/prestashop-base:ps1.7-dev-5.6-fpm-apache * 
+* biolinh/prestashop-base:ps-release 
+* biolinh/prestashop-base:ps-5.6-fpm-apache  
+* biolinh/prestashop-base:5.6-fpm-apache 
+* biolinh/prestashop-base:ps1.7-dev 
+* biolinh/prestashop-base:ps1.7-dev-5.6-fpm-apache 
 
 Those images support xdebug, fpm and latest apache.
 
@@ -15,14 +15,18 @@ There are two resources to get the code of Prestashop
 ## Release page (ps-release-5.6-apache)
 Prestashop's source code has been released in Prestashop Office site [Prestashop Office site](https://www.prestashop.com/en/previous-versions)
 Availablity images: 
-* biolinh/prestashop-base:ps-release * 
-* biolinh/prestashop-base:ps-5.6-fpm-apache  *
+* biolinh/prestashop-base:ps-release 
+* biolinh/prestashop-base:ps-5.6-fpm-apache 
 
 ## Prestashop's source code in GitHub (ps1.7-dev-5.6-apache)
 From GitHub, we can get not only all released-tagged code corresponding those versions in release page but also develop branch.
 We can have latest code of Prestashop but it is still in development mode. So, make your choice.
 
 Notes: Althought you can specific any version to use, but using 1.6.1.x version, the prestashop's front-end doesn't work, only show logo, even its' back-end works propertify. I suggest using prestashop version 1.7.x.y
+Availablity images: 
+* biolinh/prestashop-base:5.6-fpm-apache 
+* biolinh/prestashop-base:ps1.7-dev 
+* biolinh/prestashop-base:ps1.7-dev-5.6-fpm-apache 
 
 ## Install which Prestashop version you need
 
@@ -66,7 +70,7 @@ $ docker run -ti --name some-prestashop --network prestashop-net -e DB_SERVER=so
 
 ## How to run 
 
-[![[prestashop install]](https://www.prestashop.com/sites/all/themes/prestashop/images/logo_ps_second.svg)](https://youtu.be/-eFWNe21DWM)
+[![[prestashop install]](https://youtu.be/-eFWNe21DWM)](https://youtu.be/-eFWNe21DWM)
 
 ### Docker run
 
