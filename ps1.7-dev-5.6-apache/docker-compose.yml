@@ -1,0 +1,32 @@
+version: '3.2'
+
+services:
+    mysql:
+        image: mysql:5
+        container_name: ps-dev-mysql-5.7
+        ports:
+            - "3306"
+        volumes:
+            - ./db-data:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: prestashop
+        restart: always
+    apache:
+        container_name: ps-dev
+        image: biolinh/prestashop-base:ps1.7-dev
+        environment:
+            PS_INSTALL_AUTO: 1
+            DB_PASSWD: password
+            DB_NAME: prestashop
+            DB_SERVER: mysql
+            PS_DOMAIN: localhost:16001
+            PS_FOLDER_INSTALL: install
+            PS_FOLDER_ADMIN: admin
+            PS_VERSION: 1.6.1.19
+        ports:
+            - "16001:80"
+        volumes:
+            - ./src:/var/www/html
+        restart: always
+
