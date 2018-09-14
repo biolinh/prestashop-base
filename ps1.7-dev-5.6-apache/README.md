@@ -46,7 +46,7 @@ $ docker run -ti --name some-prestashop --network prestashop-net -e DB_SERVER=so
 
 ## How to run 
 
-[![[prestashop install]](https://www.prestashop.com/sites/all/themes/prestashop/images/logo_ps_second.svg)](https://youtu.be/-eFWNe21DWM)
+[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://youtu.be/-eFWNe21DWM)
 
 
 A new shop will be built, ready to be installed.
